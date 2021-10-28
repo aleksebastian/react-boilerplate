@@ -1,23 +1,21 @@
 module.exports = {
   mode: "development",
-  entry: __dirname + "/client/src/index.js",
+  entry: __dirname + "/client/src/index.tsx",
   module: {
     rules: [
       {
-        test: [/\.jsx$|.js$/],
+        test: /\.tsx?$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-react", "@babel/preset-env"],
-          },
-        },
+        use: "ts-loader",
       },
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
     ],
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
   },
   output: {
     filename: "bundle.js",
