@@ -12,6 +12,7 @@
   "scripts": {
     "test": "jest",
     "build:dev": "webpack serve --config ./webpack.config.dev.js",
+    "build:analyze": "webpack --config ./webpack.config.analyze.js",
     "build": "webpack --config ./webpack.config.prod.js"
   },
   "author": "ASO",

@@ -14,5 +14,6 @@ A lightweight React boilerplate setup to get up and coding in seconds.
 1. Install dependencies `npm install`
 1. For development, build dev bundle and start dev server with `npm run build:dev`
 1. Run tests with `npm run test`
+1. Bundle size getting too big? Analyze your bundle output with `npm run build:analyze`
 1. Build production bundle files (js, gzip, and br) with `npm run build`
 1. Deploy using your platform of choice
